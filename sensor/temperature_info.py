@@ -1,18 +1,15 @@
 from house_info import HouseInfo
 from datetime import date, datetime
 
-class TemperatureData():
-    def __init__(self, data):
-        super.HouseInfo(data)
-
+class TemperatureData(HouseInfo):
     @private
     def _convert_data(self, data):
         recs = []
 
         for rec in data:
-            recs.append(int(rec))
+            recs.append(int(rec, base=10))
 
-            return recs
+        return recs
 
     @override
     def get_data_by_area(self, rec_area=0):
