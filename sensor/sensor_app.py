@@ -1,10 +1,10 @@
 # Runner script for all modules
-
 from load_data import load_sensor_data
 from house_info import HouseInfo
 from datetime import datetime, date
 from temperature_info import TemperatureData
 from humidity_info import HumidityData
+from statistics import mean
 ##############################
 # Do not remove these two lines
 # They are needed to validate your unittest
