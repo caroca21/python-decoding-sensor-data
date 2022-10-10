@@ -12,18 +12,16 @@ class TemperatureData():
         for rec in data:
             recs.append(int(rec))
 
-    return recs
+            return recs
 
     @override
     def get_data_by_area(self, rec_area=0):
         recs = super.get_data_by_area("temperature", rec_area)
 
-    return _convert_data(recs)
+        return _convert_data(recs)
 
     @override
     def get_data_by_date(self, rec_date=date.today()):
         recs = super.get_data_by_date("temperature", rec_date)
 
-    return _convert_data(recs)
-
-    
+        return _convert_data(recs)
